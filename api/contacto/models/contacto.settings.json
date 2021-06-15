@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "contactos",
+  "info": {
+    "name": "Contacto"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titulo": {
+      "type": "string",
+      "required": true
+    },
+    "Descripcion": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "Telefono": {
+      "type": "string",
+      "required": true
+    },
+    "Curriculum": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

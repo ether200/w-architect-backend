@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trabajos",
+  "info": {
+    "name": "Trabajos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titulo": {
+      "type": "string",
+      "required": true
+    },
+    "Descripcion": {
+      "type": "string",
+      "required": true
+    },
+    "M2": {
+      "type": "string",
+      "default": "x"
+    },
+    "Ciudad": {
+      "type": "string",
+      "default": "x"
+    },
+    "Year": {
+      "type": "string",
+      "default": "x"
+    },
+    "Poster": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "Imagenes": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
