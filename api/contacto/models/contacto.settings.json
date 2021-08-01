@@ -2,7 +2,8 @@
   "kind": "singleType",
   "collectionName": "contactos",
   "info": {
-    "name": "Contacto"
+    "name": "Contacto",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -30,6 +31,16 @@
     "Curriculum": {
       "type": "string",
       "required": true
+    },
+    "Imagen": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
     }
   }
 }

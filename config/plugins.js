@@ -1,13 +1,10 @@
-module.exports = ({ env }) => ({
+module.exports = ({}) => ({
   upload: {
-    provider: "aws-s3",
+    provider: "cloudinary",
     providerOptions: {
-      accessKeyId: env("AWS_ACCESS_KEY_ID"),
-      secretAccessKey: env("AWS_ACCESS_SECRET"),
-      region: "sa-east-1",
-      params: {
-        Bucket: "my-game-ecommerce/walter",
-      },
+      cloud_name: "ether200cloud",
+      api_key: "279215956853299",
+      api_secret: "Dd7xEc8zSteF-S7T4hTBjmge5GU",
     },
   },
 });
