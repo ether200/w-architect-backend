@@ -17,8 +17,9 @@
       "required": true
     },
     "Descripcion": {
-      "type": "string",
-      "required": true
+      "type": "text",
+      "required": true,
+      "maxLength": 350
     },
     "Email": {
       "type": "email",
